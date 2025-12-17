@@ -4,7 +4,8 @@ import Home from '../src/pages/Home'
 import Login from '../src/pages/Login'
 import Register from '../src/pages/Register'
 import ProfilePage from '../src/pages/ProfilePage'
-
+import Navbar from './components/header/Navbar'
+import Footer from './components/footer/Footer'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <div>
       <BrowserRouter>
       <div>
-        Navbar
+      <Navbar/>
       </div>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -21,7 +22,7 @@ function App() {
         <Route path='/profile' element={<ProfilePage />}/>
       </Routes>
       <div>
-        Footer
+     <Footer/>
       </div>
       </BrowserRouter>
      
